@@ -56,5 +56,6 @@ Onokaukau::Application.routes.draw do
     # homepage
   root 'delicious_foods#index'
   resources :delicious_foods
+  get '*path' => redirect('/')
 
 end
