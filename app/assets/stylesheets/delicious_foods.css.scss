@@ -2,10 +2,55 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+@import url(https://fonts.googleapis.com/css?family=Muli);
+
 html { 
-  background: url(images/bg.jpg) no-repeat center center fixed; /* TODO setup asset pipeline */
+  background: url(bg.png) no-repeat center center fixed; /* TODO setup asset pipeline */
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  color: #ffffff;
+  padding: 0;
+  margin: 0;
+  font-family: 'Muli', sans-serif;
 }
+
+body{
+  padding: 0;
+  margin: 0;
+
+}
+
+.list_container{
+  max-width: 800px;
+  width: 60%;
+  margin: 0 auto;
+  background-color:rgba(0, 0, 0, 0.7);
+  padding: 40px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.content_container{
+  position: fixed;
+  height: 100%;
+  width: 100%;
+}
+
+h1{
+  font-size: 48px;
+}
+
+ul li{
+  list-style: none;
+  font-size: 30px;
+}
+
+::selection{
+  background-color: #a27e81;
+}
+
+/* Guess I didn't need boostrap ¯\_(ツ)_/¯ */
