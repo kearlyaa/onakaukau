@@ -1,0 +1,113 @@
+@charset "UTF-8";/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+
+
+ */
+
+
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+@import url(https://fonts.googleapis.com/css?family=Muli);
+/* line 7, /vagrant/src/onokaukau/app/assets/stylesheets/delicious_foods.css.scss */
+html {
+  background: url(bg.png) no-repeat center center fixed;
+  /* TODO setup asset pipeline */
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  color: #ffffff;
+  padding: 0;
+  margin: 0;
+  font-family: 'Muli', sans-serif;
+}
+
+/* line 19, /vagrant/src/onokaukau/app/assets/stylesheets/delicious_foods.css.scss */
+body {
+  padding: 0;
+  margin: 0;
+}
+
+/* line 25, /vagrant/src/onokaukau/app/assets/stylesheets/delicious_foods.css.scss */
+.list_container {
+  max-width: 800px;
+  width: 60%;
+  margin: 0 auto;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 40px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* line 37, /vagrant/src/onokaukau/app/assets/stylesheets/delicious_foods.css.scss */
+.content_container {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+}
+
+/* line 43, /vagrant/src/onokaukau/app/assets/stylesheets/delicious_foods.css.scss */
+h1 {
+  font-size: 48px;
+}
+
+/* line 47, /vagrant/src/onokaukau/app/assets/stylesheets/delicious_foods.css.scss */
+ul li {
+  list-style: none;
+  font-size: 30px;
+}
+
+/* line 52, /vagrant/src/onokaukau/app/assets/stylesheets/delicious_foods.css.scss */
+::selection {
+  background-color: #a27e81;
+}
+
+/* Guess I didn't need boostrap ¯\_(ツ)_/¯ */
+/* Sticky footer styles
+-------------------------------------------------- */
+/* line 4, /vagrant/src/onokaukau/app/assets/stylesheets/footer.css.scss */
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+/* line 8, /vagrant/src/onokaukau/app/assets/stylesheets/footer.css.scss */
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
+}
+
+/* line 12, /vagrant/src/onokaukau/app/assets/stylesheets/footer.css.scss */
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  background-color: rgba(0, 0, 0, 0.7);
+  text-align: right;
+  padding: 5px 10px 5px 10px;
+  box-sizing: border-box;
+}
+
+/* line 23, /vagrant/src/onokaukau/app/assets/stylesheets/footer.css.scss */
+footer a {
+  color: #ffffff;
+  text-decoration: none;
+  display: inline-block;
+}
+
+/* line 29, /vagrant/src/onokaukau/app/assets/stylesheets/footer.css.scss */
+footer a:hover {
+  opacity: .85;
+}
